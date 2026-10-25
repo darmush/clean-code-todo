@@ -68,7 +68,7 @@ const addTask = function () {
 //Edit an existing task.
 
 const editTask = function () {
-const listItem = this.parentNode;
+  const listItem = this.parentNode;
 
   const editInput = listItem.querySelector('input[type=text]');
   const label = listItem.querySelector('label');
@@ -91,7 +91,7 @@ const listItem = this.parentNode;
 
 //Delete task.
 const deleteTask = function () {
-const listItem = this.parentNode;
+  const listItem = this.parentNode;
   const ul = listItem.parentNode;
   //Remove the parent list item from the ul.
   ul.removeChild(listItem);
