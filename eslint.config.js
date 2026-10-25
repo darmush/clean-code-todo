@@ -3,16 +3,16 @@ import globals from 'globals';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
-    js.configs.recommended,
-    {
-        languageOptions: {
-            globals: globals.browser,
-        },
-        rules: {
-            'no-var': 'error',
-            'prefer-const': 'error',
-            'no-console': 'error',
-        },
+  js.configs.recommended,
+  {
+    languageOptions: {
+      globals: globals.browser,
     },
-    eslintConfigPrettier,
-]
+    rules: {
+      'no-var': 'error',
+      'prefer-const': 'error',
+      'no-console': 'error',
+    },
+  },
+  eslintConfigPrettier,
+];
