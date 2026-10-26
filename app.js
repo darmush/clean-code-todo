@@ -84,8 +84,6 @@ const setTaskIncomplete = function () {
   bindTaskEvents(listItem, setTaskComplete);
 };
 
-addButton.onclick = addTask;
-
 const bindTaskEvents = function (listItem, setTaskStatus) {
   const checkbox = listItem.querySelector('input[type=checkbox]');
   const editButton = listItem.querySelector('button.edit');
@@ -102,5 +100,6 @@ const bindListEvents = function (list, setTaskStatus) {
   }
 };
 
+addButton.onclick = addTask;
 bindListEvents(incompleteTasksList, setTaskComplete);
 bindListEvents(completedTasksList, setTaskIncomplete);
