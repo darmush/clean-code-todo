@@ -7,7 +7,6 @@ body {
 .method-info {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 .method-info img {
@@ -23,13 +22,11 @@ body {
   }
 }
 .todo-app {
-  display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 .task {
   width: 56%;
-  display: inline-block;
   flex-grow: 1;
 }
 .new-task-row {
@@ -105,10 +102,6 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
-  vertical-align: middle;
-}
-
 li > input[type='checkbox'] {
   margin: 0 10px;
 }
