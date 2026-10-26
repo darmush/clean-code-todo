@@ -85,7 +85,6 @@ const setTaskIncomplete = function () {
 };
 
 addButton.onclick = addTask;
-addButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (listItem, setTaskStatus) {
   const checkbox = listItem.querySelector('input[type=checkbox]');
